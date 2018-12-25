@@ -32,8 +32,6 @@ public class StateCapitalDatabase {
             e.printStackTrace();
         }
         try {
-            //Class.forName("com.mysql.cj.jdbc.Driver"); // I was notified this is unnecessary by IDE
-
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/US_States", "Enter username here", "Enter password here");
             Statement stmt=con.createStatement();
